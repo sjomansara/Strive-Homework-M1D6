@@ -86,7 +86,7 @@ function dice() {
   return roundedNumber
 }
 
-console.log(dice())
+// console.log(dice())
 
 /* Ex.2 
     Write a function called "whoIsBigger" which receives 2 numbers as parameters and returns the biggest one.
@@ -213,7 +213,7 @@ function isTodayMyBirthday(currentDay, currentMonth) {
   }
 }
 
-console.log(isTodayMyBirthday(28, 6))
+// console.log(isTodayMyBirthday(28, 6))
 
 // JS Arrays // Objs
 // NOTE: movies array is defined at the end of this file!
@@ -222,13 +222,19 @@ console.log(isTodayMyBirthday(28, 6))
    Write a function called "deleteProp" which receives an object and a string as parameters, and returns the given object after deleting its property named as the given string.
 */
 
+
+
 /* Ex.12 
     Write a function called "olderMovie" which finds the oldest movie in the array provided at the end of this file.
 */
 
+
+
 /* Ex.13
     Write a function called "countMovies" which returns the number of movies contained in the array provided at the end of this file.
 */
+
+
 
 /* Ex.14
     Write a function called "onlyTheTitles" which creates an array with just the titles of the movies provided in the array at the end of the file.
@@ -399,3 +405,10 @@ const movies = [
       "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg",
   },
 ]
+
+// Ex. 13
+function countMovies() {
+  return movies.length
+}
+
+console.log(countMovies())
