@@ -222,14 +222,9 @@ function isTodayMyBirthday(currentDay, currentMonth) {
    Write a function called "deleteProp" which receives an object and a string as parameters, and returns the given object after deleting its property named as the given string.
 */
 
-
-
 /* Ex.12 
     Write a function called "olderMovie" which finds the oldest movie in the array provided at the end of this file.
 */
-
- 
-// }
 
 /* Ex.13
     Write a function called "countMovies" which returns the number of movies contained in the array provided at the end of this file.
@@ -421,6 +416,7 @@ function olderMovie() {
 // console.log(olderMovie())
 
 // Ex.13
+
 function countMovies() {
   return movies.length
 }
@@ -428,6 +424,7 @@ function countMovies() {
 // console.log(countMovies())
 
 // Ex.14
+
 function onlyTheTitles() {
   let titlesArray = []
   for (let i = 0; i < movies.length; i++) {
@@ -443,6 +440,16 @@ function onlyTheTitles() {
 // Ex.16
 
 // Ex.17
+
+function sumAllTheYears() {
+  let sumOfYears = 0
+  for (let i = 0; i < movies.length; i++) {
+    sumOfYears += parseInt(movies[i].Year)
+  }
+  return sumOfYears
+}
+
+// console.log(sumAllTheYears())
 
 // Ex.18
 
