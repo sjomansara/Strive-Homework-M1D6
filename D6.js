@@ -70,7 +70,9 @@ console.log(me)
    Programmatically remove the last skill from the "skills" array inside the "me" object.
 */
 
+me.mySkills.pop()
 
+console.log(me)
 
 // JS Functions
 /* Ex.1
