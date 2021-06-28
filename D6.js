@@ -130,11 +130,17 @@ console.log(deleteOne("dog", true))
    Ex.: onlyLetters("I have 4 dogs")  => returns "I have  dogs"
 */
 
+function onlyLetters(randomString) {
+  return randomString.replace(/[0-9]/g, " ")
+}
 
+console.log(onlyLetters("I have 4 dogs")) 
 
 /* Ex.6 
    Write a function called "isThisAnEmail" which receives a string as a parameter and returns true if the string is a valid email address.
 */
+
+
 
 /* Ex.7
    Write a function called "whatDayIsIt" that should return the current day of the week.
