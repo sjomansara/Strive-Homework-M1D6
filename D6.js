@@ -439,6 +439,16 @@ function onlyTheTitles() {
 
 // Ex.16
 
+function getMovieById(id) {
+  for (let i = 0; i < movies.length; i++) {
+    if (id === movies[i].imdbID) {
+      return movies[i]
+    }
+  }
+}
+
+// console.log(getMovieById("tt0848228"))
+
 // Ex.17
 
 function sumAllTheYears() {
