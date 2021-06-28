@@ -18,7 +18,7 @@
 
 let test = "someString"
 
-console.log(test)
+//console.log(test)
 
 /* Ex.B
     Create a variable called "sum" and assign to it the result of the sum between 10 and 20.
@@ -26,7 +26,7 @@ console.log(test)
 
 let sum = 10 + 20
 
-console.log(sum)
+// console.log(sum)
 
 
 /* Ex.C 
@@ -35,7 +35,7 @@ console.log(sum)
 
 let random = Math.random() * 20
 
-console.log(random)
+// console.log(random)
 
 /* Ex.D
     Create a variable called "me" and assign to it an object containing the following information: name = your name, surname = your surname, age = your age.
@@ -56,7 +56,7 @@ let me = {
 
 delete me.myAge
 
-console.log(me)
+// console.log(me)
 
 /* Ex.F 
    Programmatically add to the object me an array called "skills", containing the programming languages you know right now.
@@ -64,7 +64,7 @@ console.log(me)
 
 me.mySkills = ["HTML", "CSS", "JavaScript"]
 
-console.log(me)
+// console.log(me)
 
 /* Ex.G 
    Programmatically remove the last skill from the "skills" array inside the "me" object.
@@ -72,7 +72,7 @@ console.log(me)
 
 me.mySkills.pop()
 
-console.log(me)
+// console.log(me)
 
 // JS Functions
 /* Ex.1
@@ -81,7 +81,7 @@ console.log(me)
 
 function dice() {
   let randomNumber = Math.random() * 6
-  let roundedNumber = Math.floor(randomNumber)
+  let roundedNumber = Math.ceil(randomNumber) 
   return roundedNumber
 }
 
@@ -96,7 +96,7 @@ function whoIsBigger(a, b) {
   return biggest
 }
 
-console.log(whoIsBigger(100, 20))
+// console.log(whoIsBigger(100, 20))
 
 /* Ex.3
     Write a function called "splitMe" which receives a string as a parameter and returns an array with every word in that string.
@@ -107,7 +107,7 @@ function SplitMe(mySentence) {
   return mySentence.split(" ")
 }
 
-console.log(SplitMe("I love coding")) 
+// console.log(SplitMe("I love coding")) 
 
 /* Ex.4
     Write a function called "deleteOne" which receives a string and a boolean as parameters. If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
@@ -123,7 +123,7 @@ function deleteOne(string, boolean) {
   return arrayToUse.join("")
 }
 
-console.log(deleteOne("dog", true))
+// console.log(deleteOne("dog", true))
 
 /* Ex.5
    Write a function called "onlyLetters" which receives a string as a parameter and returns it removing all the digits.
@@ -134,7 +134,7 @@ function onlyLetters(randomString) {
   return randomString.replace(/[0-9]/g, " ")
 }
 
-console.log(onlyLetters("I have 4 dogs")) 
+// console.log(onlyLetters("I have 4 dogs")) 
 
 /* Ex.6 
    Write a function called "isThisAnEmail" which receives a string as a parameter and returns true if the string is a valid email address.
@@ -145,7 +145,7 @@ function isThisAnEmail(myEmail) {
   return re.test(myEmail)
 }
 
-console.log(isThisAnEmail("sara.sjoman@hotmail.com"))
+// console.log(isThisAnEmail("sara.sjoman@hotmail.com"))
 
 /* Ex.7
    Write a function called "whatDayIsIt" that should return the current day of the week.
@@ -166,7 +166,7 @@ function whatDayIsIt() {
   return n
 }
 
-console.log("Today is: ", whatDayIsIt())
+// console.log("Today is: ", whatDayIsIt())
 
 /* Ex.8
     Write a function called "rollTheDices" which receives a number as a parameter.
@@ -179,9 +179,27 @@ console.log("Today is: ", whatDayIsIt())
     }
 */
 
+function rollTheDices(number) {
+  let diceObject = {
+    sum: 0,
+    values: []
+  }
+  
+  for (i = 0; i < number; i++) {
+    let diceNumber = dice() // this is our dice roll
+    diceObject.sum += diceNumber
+    diceObject.values.push(diceNumber)
+  }
+  return diceObject
+}
+  console.log(rollTheDices(4))
 /* Ex.9
    Write a function called "howManyDays" which receives a date as a parameter and should return the number of days passed since that date.
 */
+
+function howManyDays() {
+
+}
 
 /* Ex.10
    Write a function called "isTodayMyBirthday" which should return true if today's your birthday, false otherwise.
