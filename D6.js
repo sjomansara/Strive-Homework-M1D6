@@ -10,6 +10,7 @@
     - Publish them into your own GitHub account and upload repository link on Eduflow before 16.30 (Berlin Time) 
 */
 
+
 //JS Basics
 
 /* Ex.A
@@ -185,25 +186,34 @@ function rollTheDices(number) {
     values: []
   }
   
-  for (i = 0; i < number; i++) {
+  for (let i = 0; i < number; i++) {
     let diceNumber = dice() // this is our dice roll
     diceObject.sum += diceNumber
     diceObject.values.push(diceNumber)
   }
   return diceObject
 }
-  console.log(rollTheDices(4))
+  // console.log(rollTheDices(4))
+
 /* Ex.9
    Write a function called "howManyDays" which receives a date as a parameter and should return the number of days passed since that date.
 */
 
-function howManyDays() {
-
-}
-
 /* Ex.10
    Write a function called "isTodayMyBirthday" which should return true if today's your birthday, false otherwise.
 */
+
+function isTodayMyBirthday(currentDay, currentMonth) {
+  let myDay = 19
+  let myMonth = 12
+  if (currentDay === 19 && currentMonth === 12) {
+    return true
+  } else {
+    return false
+  }
+}
+
+console.log(isTodayMyBirthday(28, 6))
 
 // JS Arrays // Objs
 // NOTE: movies array is defined at the end of this file!
