@@ -24,6 +24,9 @@ console.log(test)
     Create a variable called "sum" and assign to it the result of the sum between 10 and 20.
 */
 
+let sum = 10 + 20
+
+console.log(sum)
 
 
 /* Ex.C 
