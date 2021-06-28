@@ -91,6 +91,13 @@ console.log(dice())
     Write a function called "whoIsBigger" which receives 2 numbers as parameters and returns the biggest one.
 */
 
+function whoIsBigger(a, b) {
+  const biggest = a > b ? a : b
+  return biggest
+}
+
+console.log(whoIsBigger(100, 20))
+
 /* Ex.3
     Write a function called "splitMe" which receives a string as a parameter and returns an array with every word in that string.
     Ex. splitMe("I love coding") => returns ["I", "Love", "Coding"]
