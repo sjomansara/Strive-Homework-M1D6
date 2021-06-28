@@ -151,7 +151,22 @@ console.log(isThisAnEmail("sara.sjoman@hotmail.com"))
    Write a function called "whatDayIsIt" that should return the current day of the week.
 */
 
+function whatDayIsIt() {
+  let d = new Date()
+  let weekday = new Array(7)
+  weekday[0] = "Sunday";
+  weekday[1] = "Monday";
+  weekday[2] = "Tuesday";
+  weekday[3] = "Wednesday";
+  weekday[4] = "Thursday";
+  weekday[5] = "Friday";
+  weekday[6] = "Saturday";
 
+  let n = weekday[d.getDay()]
+  return n
+}
+
+console.log("Today is: ", whatDayIsIt())
 
 /* Ex.8
     Write a function called "rollTheDices" which receives a number as a parameter.
