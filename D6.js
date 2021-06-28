@@ -437,6 +437,20 @@ function onlyTheTitles() {
 
 // Ex.15
 
+function onlyInThisMillennium() {
+  let thisMillennium = "20"
+  let moviesInThisMillenium = []
+  
+  for (let i = 0; i < movies.length; i++) {
+    if (movies[i].Year.startsWith(thisMillennium)) {
+      moviesInThisMillenium.push(movies[i])
+    }
+  }
+  return moviesInThisMillenium
+}
+
+// console.log(onlyInThisMillennium())
+
 // Ex.16
 
 function getMovieById(id) {
