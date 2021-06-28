@@ -228,13 +228,12 @@ function isTodayMyBirthday(currentDay, currentMonth) {
     Write a function called "olderMovie" which finds the oldest movie in the array provided at the end of this file.
 */
 
-
+ 
+// }
 
 /* Ex.13
     Write a function called "countMovies" which returns the number of movies contained in the array provided at the end of this file.
 */
-
-
 
 /* Ex.14
     Write a function called "onlyTheTitles" which creates an array with just the titles of the movies provided in the array at the end of the file.
@@ -406,9 +405,47 @@ const movies = [
   },
 ]
 
-// Ex. 13
+// Ex.12
+
+function olderMovie() {
+  let oldestMovie
+  for (let i = 0; i < movies.length; i++) {
+    // console.log(movies[i].Year)
+    if (oldestMovie == undefined || parseInt(oldestMovie) > parseInt(movies[i].Year)) {
+      oldestMovie = movies[i].Year
+    }
+  }
+  return oldestMovie
+}
+
+// console.log(olderMovie())
+
+// Ex.13
 function countMovies() {
   return movies.length
 }
 
-console.log(countMovies())
+// console.log(countMovies())
+
+// Ex.14
+function onlyTheTitles() {
+  let titlesArray = []
+  for (let i = 0; i < movies.length; i++) {
+    titlesArray.push(movies[i].Title)
+  }
+  return titlesArray
+}
+
+// console.log(onlyTheTitles())
+
+// Ex.15
+
+// Ex.16
+
+// Ex.17
+
+// Ex.18
+
+// Ex.19
+
+// Ex. 20
