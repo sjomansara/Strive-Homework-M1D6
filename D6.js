@@ -140,7 +140,12 @@ console.log(onlyLetters("I have 4 dogs"))
    Write a function called "isThisAnEmail" which receives a string as a parameter and returns true if the string is a valid email address.
 */
 
+function isThisAnEmail(myEmail) {
+  let re = /\S+@\S+\.\S+/
+  return re.test(myEmail)
+}
 
+console.log(isThisAnEmail("sara.sjoman@hotmail.com"))
 
 /* Ex.7
    Write a function called "whatDayIsIt" that should return the current day of the week.
