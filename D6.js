@@ -409,6 +409,20 @@ const movies = [
   },
 ]
 
+/* Ex.11
+   Write a function called "deleteProp" which receives an object and a string as parameters, and returns the given object after deleting its property named as the given string.
+*/
+
+function deleteProp(obj, prop) {
+    delete obj[prop]
+    return obj
+}
+var myObject = {
+  name: "Sara",
+  age: 23
+}
+// console.log(deleteProp(myObject, "age"))
+
 // Ex.12
 
 function olderMovie() {
