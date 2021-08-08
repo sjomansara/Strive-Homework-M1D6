@@ -536,3 +536,15 @@ function searchAndDivide(string){
 /* Ex.20
    Write a function called "removeIndex" which receives a number as a parameter and returns the movies array without the element in the given position.
 */
+
+function removeIndex(number){
+  let result =[]
+  for(let i = 0; i < movies.length; i++){
+      if (number === i)
+          continue
+      
+      result.push(movies[i])
+  }
+  return result
+}
+// console.log(removeIndex(2))
