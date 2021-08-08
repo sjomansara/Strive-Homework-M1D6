@@ -518,6 +518,21 @@ function searchByTitle(string) {
     and another array "unmatch" with all the remaining ones.
 */
 
+function searchAndDivide(string){
+  let result = {
+      match: [],
+      unmatch: []
+  }
+  for(let i = 0; i < movies.length; i++){
+      if (movies[i].Title.indexOf(string) !== -1)
+          result.match.push(movies[i])
+      else
+          result.unmatch.push(movies[i])
+  }
+  return result
+}  
+// console.log(searchAndDivide("Lords"))
+
 /* Ex.20
    Write a function called "removeIndex" which receives a number as a parameter and returns the movies array without the element in the given position.
 */
